@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import Movie2 from "./Movie2";
+import {useState, useEffect} from "react";
+import Movie2 from "../components/Movie2";
 
-function Movie(){
+function Home(){
     const [loading, setLoading] = useState(true);
     const [movies, setMovies] = useState([]);
     const getMovies = async() => {
@@ -37,4 +37,4 @@ function Movie(){
     </div>);
 }
 
-export default Movie;
+export default Home;
